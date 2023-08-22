@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>  
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="cuerpo-formulario">
+
+    <h1 class="titulo-formulario">
+        CONTACTO
+    </h1>
+
+    <h2 class="inicio-formulario">Responde este formulario para contactarnos</h2>
+
+    <form class="formulario" action="formulario.html" method="get">
+
+        <div class="estilo-formulario">
+
+        <label for="nombre"> Nombre: </label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <p>  </p>
+        <label for="email">  Correo: </label>
+        <input type="mail" id="email" name="email" required><br>
+
+        <p> <b>Selecciona tu género</b> </p>
+        <label for="femenino"> Femenino </label>
+        <input type="radio" id="femenino" name="genero" required><br>
+        <label for="masculino"> Masculino</label>
+        <input type="radio" id="masculino" name="genero" required><br>
+
+        <p>  </p>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br>
+        
+        <p><b>Escribe tus comentarios para ayudarnos</b></p>
+        <textarea if="comentarios" name="comentarios" rows="5" cols="37" required></textarea>
+
+        <p><b>¿De qué ciudad eres?</b> </p>
+        <select id="estado" name="estado">
+            <option value="guadalajara">Guadalajara</option>
+            <option value="tonalá">Tonalá</option>
+            <option value="zapopan">Zapopán</option>
+            <option value="otros">Otros</option>
+        </select><br>
+
+        <p><b>¿Te interesa contratarme? SOLO SELECCIONA UNA OPCIÓN</b></p>
+        <label for="si">SÍ</label>
+        <input type="checkbox" id="si" name="si"><br>
+        <label for="no">NO</label>
+        <input type="checkbox" id="no" name="no"><br> 
+
+        <p>  </p>
+
+        </div>
+
+        <div class="enviar">
+        <label for="submit"> <b>ENVIAR DATOS</b></label>
+        <p>  </p>
+        <input type="submit" value="Enviar">
+        </div>
+
+
+    </form>
+
+
+</body>
+
+
+
+</html>
